@@ -15,6 +15,8 @@ import hero3 from '@/public/assets/hero-img3.jpg';
 
 
 export default function Home() {
+
+  useEffect(() => {AOS.init();}, []);
   return (
     <main>
       <Navbar/>
