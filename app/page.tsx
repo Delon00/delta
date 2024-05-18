@@ -1,4 +1,5 @@
 'use client';
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Navbar from "@/components/navbar/navbar";
