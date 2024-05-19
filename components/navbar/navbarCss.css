@@ -90,9 +90,9 @@
     padding: 4rem 2rem;
 }
 .modal-link{
-    min-width:110px ;
-    padding: 1rem 9rem;
-    margin: 3rem 0.2rem;
+    min-width:100px ;
+    padding: 1rem 5rem;
+    margin: 2rem 0.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,9 +113,9 @@
     align-items: center;
     padding: 0 1rem;
 }
-.modal-title h1{font-size:18px; text-align: center; font-weight: bold;}
+.modal-title h1{font-size:20px; text-align: center; font-weight: bold;}
 .close-modal{justify-content: flex-end;}
-.close-modal img{width: 18px;height: auto;}
+.close-modal img{width: 20px;height: auto;}
 .logo{ width: 150px; height: auto;}
 @media (max-width: 768px) {
     .nav-links {display: none;flex-direction: column;width: 100%;background-color: #fff; /* Optionnel: pour la visibilité */}

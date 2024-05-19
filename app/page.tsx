@@ -11,6 +11,7 @@ import logo from '@/public/assets/del&co logo.png';
 import hero1 from '@/public/assets/hero-img1.jpg';
 import hero2 from '@/public/assets/hero-png2A.png';
 import hero3 from '@/public/assets/hero-png2B.png';
+import service1 from '@/public/assets/service1.jpg';
 
 
 
@@ -38,6 +39,18 @@ export default function Home() {
       <section id="services" className="services" >
         <h1 data-aos-duration="700" data-aos="fade-up">Nos services</h1>
         <div className="cartes-services">
+          <div className="service-card">
+            <Image src={service1} className="service1" alt="del&co service"/>
+            <div className="overlay">
+              <div className="w-full">
+                <h2>Service Fourniture</h2>
+                <a href="http://">En savoir plus</a>
+              </div>
+              <div><Image src={service1} className="service1" alt="del&co service"/></div>
+            </div>
+          </div>
+          <div className="service-card"></div>
+          <div className="service-card"></div>
           <div className="service-card"></div>
           <div className="service-card"></div>
           <div className="service-card"></div>
