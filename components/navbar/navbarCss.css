@@ -80,12 +80,12 @@
     border: 1px #00000062 solid;
 }
 .modal-links{
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
 }
 .modal-link{
     min-width:110px ;
-    padding: 0.1rem 3rem;
-    margin: 1.5rem 0.2rem;
+    padding: 1rem 9rem;
+    margin: 3rem 0.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +97,7 @@
     text-align: center;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+.modal-link p{font-size: 18px;}
 .modal-link:hover{ background-color: #ff7f43;color: #fff;transform: scale(1.1);cursor: pointer;}
 .modal-title{
     width: 100%;
