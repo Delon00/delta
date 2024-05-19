@@ -27,13 +27,14 @@ body{position: relative;}
 
 }
 .main-hero h1{
+  top: 10%;
   position: fixed;
   z-index: 12;
   background: #000000;
   background: linear-gradient(to right, #000000 52%, #FF7F43 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  
-  font-size: 192px;
+  font-size: 150px;
   font-weight: bold;
 }
 .hero-colone1 .bloc2{
@@ -102,7 +103,8 @@ body{position: relative;}
 
 }
 #services h1{
-  font-size: 20px;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 
@@ -113,30 +115,35 @@ body{position: relative;}
 /* --------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------MEDIAQUERRY--------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+  .main-hero h1{font-size: 130px; z-index: 10;}
+}
 @media only screen and (max-width: 800px) {
   .main-hero h1{font-size: 120px; z-index: 10;}
 }
 @media only screen and (max-width: 768px) {
   .hero-colone1 .bloc1{height: 25%;}
   .hero-colone1 .bloc2{height: 75%;}
+  .main-hero h1{font-size: 92px; width: 100%; text-align: center;top: 7%; }
 }
 
 @media only screen and (max-width: 650px) {
-  .main-hero h1{font-size: 90px; width: 100%; text-align: center;top: 2%; }
+  .main-hero h1{font-size: 90px; width: 100%; text-align: center;top: 7%; }
 }
 @media only screen and (max-width: 600px) {
   .hero-colone1{display: none;}
+  .main-hero h1{font-size: 66px;top: 7%; }
 }
 
 @media only screen and (max-width: 500px) {
-
+  .hero-text{bottom: 40px;}
 }
 
 @media only screen and (max-width: 450px) {
 
 }
 @media only screen and (max-width: 390px) {
-  .main-hero h1 {width: 100%;font-size: 60px; top: 10%; text-align: center;}
+  .main-hero h1 {width: 100%;font-size: 56px; top: 10%; text-align: center;}
 }
 
 @media only screen and (max-width: 290px) {
