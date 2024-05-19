@@ -1,23 +1,38 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import logo from '@/public/assets/del&co logo.png';
 import close from '@/public/assets/close.png';
 import "./navbarCss.css";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter } from "@nextui-org/modal";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-        setIsModalOpen(!isModalOpen);
+    const openModal = () => {
+        setIsModalOpen(true);
     };
 
     const closeModal = () => {
         setIsModalOpen(false);
-        setIsOpen(false);
     };
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    useEffect(() => {
+        if (isOpen) {
+            openModal();
+        } else {
+            closeModal();
+        }
+    }, [isOpen]);
+
+    useEffect(() => {
+        if (!isModalOpen) {
+            setIsOpen(false);
+        }
+    }, [isModalOpen]);
 
     return (
         <div className="navbar">
@@ -37,19 +52,19 @@ export default function Navbar() {
                     <div className="hamburger-bar"></div>
                 </div>
             )}
-            {isOpen && (
-                <div className="hamburger-close" onClick={toggleMenu}>
-                    <Image src={close} alt='close' />
+
+            <div className={`modal ${isModalOpen ? 'active' : ''}`}>
+                <div className="modal-menu">
+                    <div className="modal-title"><h1>Menu</h1> <span onClick={toggleMenu} className='close-modal'><Image src={close} alt='close' /></span></div>
+                    <hr />
+                    <div className='modal-links'>
+                        <a href="#" className="modal-link"><p>Home</p></a>
+                        <a href="#" className="modal-link"><p>Services</p></a>
+                        <a href="#" className="modal-link"><p>A propos</p></a>
+                        <a href="#" className="modal-link"><p>Contact</p></a>
+                    </div>
                 </div>
-            )}
-            <Modal isOpen={isModalOpen} onClose={closeModal}>
-                <ModalContent>
-                    <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
-                    <ModalBody>
-                        {/* Contenu de votre modal */}
-                    </ModalBody>
-                </ModalContent>
-            </Modal>
+            </div>
         </div>
     );
 }

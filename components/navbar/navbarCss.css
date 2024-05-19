@@ -47,20 +47,8 @@
 }
 .hamburger{display: none;cursor: pointer;height: 24px;transition: transform 0.3s ease;}
 .hamburger-bar {cursor: pointer;width: 35px;border-radius: 10px;height: 10px;background-color: #ff7f43;margin: 2px 0;}
-.hamburger-close {display: none;cursor: pointer;}
+.hamburger-close {cursor: pointer;transition: opacity 0.3s ease; }
 .hamburger-close img{height: 30px; width: auto;}
-
-.close-modal {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    color: #ff7f43; /* Couleur de la croix close */
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 
 .nav-link:hover {
     background-color: #ff7f43;
@@ -68,7 +56,58 @@
     transform: scale(1.1);
     cursor: pointer;
 }
-
+.modal{
+    display: none;
+}
+.modal.active{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000006d;
+}
+.modal-menu{
+    padding:1rem;
+    padding-top: 0.5rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(86deg, rgba(255,255,255,1) 0%, rgba(255,251,249,1) 49%, rgba(255,249,246,1) 100%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px #00000062 solid;
+}
+.modal-links{
+    padding: 3rem 2rem;
+}
+.modal-link{
+    min-width:110px ;
+    padding: 0.1rem 3rem;
+    margin: 1.5rem 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 30px;
+    border: 1px solid #ff7f43;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.modal-link:hover{ background-color: #ff7f43;color: #fff;transform: scale(1.1);cursor: pointer;}
+.modal-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.modal-title h1{font-size:18px; text-align: center; font-weight: bold;}
+.close-modal{justify-content: flex-end;}
+.close-modal img{width: 18px;height: auto;}
 .logo{ width: 150px; height: auto;}
 @media (max-width: 768px) {
     .nav-links {display: none;flex-direction: column;width: 100%;background-color: #fff; /* Optionnel: pour la visibilité */}

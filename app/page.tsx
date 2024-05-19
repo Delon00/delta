@@ -21,7 +21,6 @@ export default function Home() {
   return (
     <main>
       <Navbar/>
-
       <section className="main-hero">
         <h1 className="hero-title">Architec<span className="color1">ture</span> </h1>
         <div className="hero-colone1"><div className="blank-hero"></div><Image src={hero1} className="heroimg1" alt="del&co logo"/>
