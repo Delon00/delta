@@ -9,8 +9,8 @@ import 'aos/dist/aos.css';
 // ---------IMAGE
 import logo from '@/public/assets/del&co logo.png';
 import hero1 from '@/public/assets/hero-img1.jpg';
-import hero2 from '@/public/assets/hero-img2.jpg';
-import hero3 from '@/public/assets/hero-img3.jpg';
+import hero2 from '@/public/assets/hero-png2A.png';
+import hero3 from '@/public/assets/hero-png2B.png';
 
 
 
@@ -29,7 +29,8 @@ export default function Home() {
 
         </div>
         <div className="hero-colone2">
-          <Image src={hero2} className="heroimg" alt="del&co logo"/>
+          <Image src={hero2} className="heroimg2" alt="del&co logo"/>
+          <Image src={hero3} className="heroimg3" alt="del&co logo"/>
           <div className="hero-text">Chez Del&Co, nos maquettes sont conçues pour capturer l'essence de vos projets et donner vie à vos idées.</div>
           </div>
       </section>
