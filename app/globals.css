@@ -2,87 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 .color1{color:#ff7d43}
+body{position: relative;}
 .main-hero {
   position: relative;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 4px;
   overflow: hidden; /* Assurez-vous que l'overlay ne dépasse pas les limites du conteneur */
 }
 
-.main-hero::before {
-  content: ''; /* Nécessaire pour que l'élément pseudo s'affiche */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.037); /* Couleur noire avec 50% d'opacité */
-  z-index: -1; /* Assurez-vous que l'overlay est au-dessus du contenu */
+.hero-colone1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
 }
+.hero-colone1 .bloc1{
+  height: 40%;
+  width: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(86deg, rgba(255,255,255,1) 0%, rgba(255,250,247,1) 28%, rgba(255,246,241,1) 61%, rgba(255, 224, 208, 0.765) 100%);
+  padding: 2rem;
 
-.hero-title{
-  position: fixed;
-  top: 2%;
-  z-index: 10;
 }
-.hero-title h1{
-  padding: 0;
-  width: 100%;
+.main-hero h1{
+  position: fixed;
+  z-index: 10;
   background: #000000;
   background: linear-gradient(to right, #000000 52%, #FF7F43 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  
-  font-size: 170px;
+  font-size: 192px;
   font-weight: bold;
-
 }
-
-.hero-colone1{
-  position: relative;
-  display: block;
+.hero-colone1 .bloc2{
+  height: 60%;
+  width: 100%;
+}
+.heroimg1{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .hero-colone2{
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  align-content: center;
-  color: #000;
-  background: rgb(255,255,255);
-  background: linear-gradient(86deg, rgba(255,255,255,1) 0%, rgba(255,250,247,1) 28%, rgba(255,246,241,1) 61%, rgba(255, 224, 208, 0.765) 100%);
+  max-height: 100vh;
+  height: 100vh;
 }
-
-
-.hero-colone2 h1{
-  padding: 0;
-  width: 100%;
-  background: #000000;
-  background: linear-gradient(to right, #000000 52%, #FF7F43 75%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  
-  font-size: 160px;
-  font-weight: bold;
-}
-.hero-colone2 h2{
-  text-align: justify;
-  font-size: 18px;
-  background-color: #000;
-  color: #fff;
+.hero-text{
+  margin: 0.5rem;
   padding: 1rem;
-}
-.heroimg1{
-  height: 60%;
-  width: 100%;
-  object-fit: cover;
-}
-.blank-hero{
-  height: 40%;
-}
-.hero-colone2{
-  position: relative;
+  text-align: justify;
+  position: absolute;
+  z-index: 9;
+  bottom: 1px;
+  background-color: #ff7f4317;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
 }
 .hero-col-text h3{
   position: absolute;
@@ -98,8 +77,20 @@
   object-fit: cover;
 }
 
+#services{
+  position: absolute;
+  z-index: 11;
+  height: 100vh;
+  width: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(86deg, rgba(255,255,255,1) 0%, rgba(255,250,247,1) 28%, rgba(255,246,241,1) 61%, rgb(255, 224, 208) 100%);
+  padding: 1rem;
+  display: grid;
 
-
+}
+#services h1{
+  font-size: 20px;
+}
 
 
 
@@ -110,15 +101,18 @@
 /* -------------------------------------------MEDIAQUERRY--------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 800px) {
-  .hero-title{font-size: 100px;}
+  .main-hero h1{font-size: 120px;}
 }
 @media only screen and (max-width: 768px) {
-  .hero-title{font-size: 100px;}
-  .hero-colone3{display: none;}
+  .hero-colone1 .bloc1{height: 25%;}
+  .hero-colone1 .bloc2{height: 75%;}
 }
 
-@media only screen and (max-width: 621px) {
-
+@media only screen and (max-width: 650px) {
+  .main-hero h1{font-size: 100px;}
+}
+@media only screen and (max-width: 600px) {
+  .hero-colone1{display: none;}
 }
 
 @media only screen and (max-width: 500px) {
@@ -129,7 +123,7 @@
 
 }
 @media only screen and (max-width: 390px) {
-
+  .main-hero h1 {width: 100%;font-size: 60px; top: 10%; text-align: center;}
 }
 
 @media only screen and (max-width: 290px) {

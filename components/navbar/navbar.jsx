@@ -41,7 +41,7 @@ export default function Navbar() {
             </div>
             <div className="navbar-col nav-links">
                 <a href="#" className="nav-link"><p>Home</p></a>
-                <a href="#" className="nav-link"><p>Services</p></a>
+                <a href="#services" className="nav-link"><p>Services</p></a>
                 <a href="#" className="nav-link"><p>A propos</p></a>
                 <a href="#" className="nav-link"><p>Contact</p></a>
             </div>
