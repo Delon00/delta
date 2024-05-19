@@ -34,7 +34,7 @@
   background: linear-gradient(to right, #000000 52%, #FF7F43 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  
-  font-size: 200px;
+  font-size: 170px;
   font-weight: bold;
 
 }
@@ -46,21 +46,25 @@
 .hero-colone2{
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
   align-content: center;
   color: #000;
-
   background: rgb(255,255,255);
   background: linear-gradient(86deg, rgba(255,255,255,1) 0%, rgba(255,250,247,1) 28%, rgba(255,246,241,1) 61%, rgba(255, 224, 208, 0.765) 100%);
 }
 
+
 .hero-colone2 h1{
-  text-align: justify;
-  font-size: 18px;
-  background-color: #000;
-  color: #fff;
-  padding: 1rem;
+  padding: 0;
+  width: 100%;
+  background: #000000;
+  background: linear-gradient(to right, #000000 52%, #FF7F43 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  font-size: 160px;
+  font-weight: bold;
 }
 .hero-colone2 h2{
   text-align: justify;
