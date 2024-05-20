@@ -37,23 +37,34 @@ export default function Home() {
       </section>
 
       <section id="services" className="services" >
-        <h1 data-aos-duration="700" data-aos="fade-up">Nos services</h1>
+        <h1 className="title" data-aos-duration="700" data-aos="fade-up">Nos services</h1>
         <div className="cartes-services">
-          <div className="service-card">
-            <Image src={service1} className="service1" alt="del&co service"/>
-            <div className="overlay">
-              <div className="w-full">
-                <h2>Service Fourniture</h2>
-                <a href="http://">En savoir plus</a>
-              </div>
-              <div><Image src={service1} className="service1" alt="del&co service"/></div>
+
+          <div className="carte">
+            <div className="left"><Image src={service1} className="service1" alt="del&co logo"/></div>
+            <div className="right">
+              <h2>Fournitures</h2>
+              <h1>Besoin de Fournitures pour votre batiment </h1>
+              <a href="#services">En savoir plus</a>
             </div>
           </div>
-          <div className="service-card"></div>
-          <div className="service-card"></div>
-          <div className="service-card"></div>
-          <div className="service-card"></div>
-          <div className="service-card"></div>
+          <div className="carte">
+            <div className="right">
+              <h2>Fournitures</h2>
+              <h1>Besoin de Fournitures pour votre batiment </h1>
+              <a href="#services">En savoir plus</a>
+            </div>
+            <div className="left"><Image src={service1} className="service1" alt="del&co logo"/></div>
+          </div>
+          <div className="carte">
+            <div className="left"><Image src={service1} className="service1" alt="del&co logo"/></div>
+            <div className="right">
+              <h2>Fournitures</h2>
+              <h1>Besoin de Fournitures pour votre batiment </h1>
+              <a href="#services">En savoir plus</a>
+            </div>
+          </div>
+
         </div>
       </section>
 
