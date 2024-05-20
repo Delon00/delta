@@ -14,6 +14,7 @@ import hero3 from '@/public/assets/hero-png2B.png';
 import service1 from '@/public/assets/service1.jpg';
 import service2 from '@/public/assets/service2.jpg';
 import service3 from '@/public/assets/service3.jpg';
+import apropos1 from '@/public/assets/apropos1.jpg';
 
 
 
@@ -61,7 +62,7 @@ export default function Home() {
               <h1>Nous prenons en charge l'intégralité de vos projets de construction.</h1>
               <a className="service-link" href="#services">En savoir plus</a>
             </div>
-            <div className="left"><Image src={service2} className="service1" alt="del&co logo"/></div>
+            <div className="left"><Image src={service2} className="service2" alt="del&co logo"/></div>
           </div>
           <div data-aos-duration="1000" data-aos="fade-up" className="carte">
             <div className="left"><Image src={service3} className="service1" alt="del&co logo"/></div>
@@ -71,9 +72,18 @@ export default function Home() {
               <a className="service-link" href="#services">En savoir plus</a>
             </div>
           </div>
-
         </div>
+
+        <section  id="apropos">
+          <h1 className="title-apropos">A propos de nous</h1>
+          <p className="text-apropos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eaque provident possimus necessitatibus obcaecati magnam perspiciatis? Suscipit vitae, veritatis impedit aliquid, nobis quam ducimus pariatur dignissimos explicabo nesciunt repellat hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam esse necessitatibus alias fuga molestiae distinctio qui placeat sit voluptate ex error reprehenderit, debitis aperiam asperiores sed dolorum similique nam quae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, enim eveniet. Dolorum minima soluta nemo? Eos doloribus nostrum repudiandae inventore soluta! Dolore repellat dignissimos voluptates qui nostrum voluptatum libero nisi.
+          </p>
+          <Image src={apropos1} className="apropos-img" alt="del&co a propos"/>
+        </section>
+
       </section>
+
+
 
     </main>
   );

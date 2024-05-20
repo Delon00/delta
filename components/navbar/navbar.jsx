@@ -58,7 +58,7 @@ export default function Navbar() {
             <div className="navbar-col nav-links">
                 <a href="#" className="nav-link"><p>Home</p></a>
                 <a href="#services" className="nav-link"><p>Services</p></a>
-                <a href="#" className="nav-link"><p>A propos</p></a>
+                <a href="#apropos" className="nav-link"><p>A propos</p></a>
                 <a href="#" className="nav-link"><p>Contact</p></a>
             </div>
             {!isOpen && (
@@ -81,7 +81,7 @@ export default function Navbar() {
                         <div className="modal-links">
                             <a href="#" className="modal-link" onClick={closeModal}><p>Home</p></a>
                             <a href="#services" className="modal-link" onClick={closeModal}><p>Services</p></a>
-                            <a href="#" className="modal-link" onClick={closeModal}><p>A propos</p></a>
+                            <a href="#apropos" className="modal-link" onClick={closeModal}><p>A propos</p></a>
                             <a href="#" className="modal-link" onClick={closeModal}><p>Contact</p></a>
                         </div>
                     </div>
