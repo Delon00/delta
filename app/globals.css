@@ -91,7 +91,7 @@ body{position: relative;}
   position: absolute;
   z-index: 12;
   bottom: 1px;
-  background-color: #ff7f4317;
+  background-color: #ff7f433a;
   color: #fff;
   font-size: 18px;
   border: 1px solid #fff;
@@ -208,16 +208,30 @@ body{position: relative;}
   font-size: 80px;
   font-weight: bold;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
-.text-apropos{width: 75%; text-align: justify;}
+.text-apropos{
+  width: 75%; 
+  text-align: justify;
+  padding: 1rem;
+  z-index: 12;
+  bottom: 1px;
+  background-color: #ff7f433a;
+  color: #000;
+  font-size: 18px;
+  border: 1px solid #000;
+
+
+}
 .apropos-img{
   position: absolute;
+  z-index: -1;
   height: 70%;
   width: auto;
   object-fit: cover;
   border: 1px solid #000;
   right: 5%;
+  bottom: 0;
 }
 
 /* --------------------------------------------------------------------------------------------------- */
@@ -233,6 +247,7 @@ body{position: relative;}
   .hero-colone1 .bloc1{height: 25%;}
   .hero-colone1 .bloc2{height: 75%;}
   .main-hero h1{font-size: 92px; width: 100%; text-align: center;top: 7%; }
+  .title-apropos{font-size: 60px;}
 }
 
 @media only screen and (max-width: 650px) {
@@ -240,6 +255,8 @@ body{position: relative;}
   .carte .right h1{font-size: 24px;line-height: 1.8rem;}
   .carte{padding: 0.5rem;}
   #services .title{font-size: 40px;}
+  .title-apropos{font-size: 50px;}
+
 
 }
 @media only screen and (max-width: 600px) {
@@ -255,7 +272,8 @@ body{position: relative;}
 }
 
 @media only screen and (max-width: 450px) {
-  #services{padding: 4rem 0.5rem ;}
+  #services{padding: 4rem 0rem ;}
+  .text-apropos{width: 100%;}
 }
 @media only screen and (max-width: 390px) {
   .main-hero h1 {width: 100%;font-size: 56px; top: 10%; text-align: center;}

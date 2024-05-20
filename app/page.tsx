@@ -78,7 +78,9 @@ export default function Home() {
           <h1 className="title-apropos">A propos de nous</h1>
           <p className="text-apropos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eaque provident possimus necessitatibus obcaecati magnam perspiciatis? Suscipit vitae, veritatis impedit aliquid, nobis quam ducimus pariatur dignissimos explicabo nesciunt repellat hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam esse necessitatibus alias fuga molestiae distinctio qui placeat sit voluptate ex error reprehenderit, debitis aperiam asperiores sed dolorum similique nam quae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, enim eveniet. Dolorum minima soluta nemo? Eos doloribus nostrum repudiandae inventore soluta! Dolore repellat dignissimos voluptates qui nostrum voluptatum libero nisi.
           </p>
+          <div>
           <Image src={apropos1} className="apropos-img" alt="del&co a propos"/>
+          </div>
         </section>
 
       </section>
