@@ -28,8 +28,10 @@ export default function Home() {
       <h1>Architecture</h1>
           <div className="hero-colone1">
             <div className="bloc1"></div>
-            <div className="bloc2"><Image src={hero1} className="heroimg1" alt="del&co logo"/></div>
-
+            <div className="bloc2">
+              <Image src={hero1} className="heroimg1" alt="del&co logo"/>
+              <div className="dots"><div className="dot active"></div><div className="dot"></div><div className="dot"></div></div>
+            </div>  
         </div>
         <div className="hero-colone2">
           <Image src={hero2} className="heroimg2" alt="del&co logo"/>
@@ -39,7 +41,7 @@ export default function Home() {
       </section>
 
       <section id="services" className="services" >
-        <div data-aos-duration="700" data-aos="fade-up">
+        <div className="px-8" data-aos-duration="700" data-aos="fade-up">
           <h1 className="title" >Nos services</h1>
           <p>Décrouvrez les services que nous proposons</p>
         </div>
@@ -53,7 +55,7 @@ export default function Home() {
               <a className="service-link" href="#services">En savoir plus</a>
             </div>
           </div>
-          <div data-aos-duration="1000" data-aos="fade-up" className="carte">
+          <div data-aos-duration="1000" data-aos="fade-up" className="carte noir">
             <div className="right">
               <h2>Construstuction</h2>
               <h1>Nous prenons en charge l'intégralité de vos projets de construction.</h1>
@@ -65,7 +67,7 @@ export default function Home() {
             <div className="left"><Image src={service3} className="service1" alt="del&co logo"/></div>
             <div className="right">
               <h2>Achat de terrain</h2>
-              <h1>Besoin de Fournitures pour votre batiment </h1>
+              <h1>Nous vous accompagnons du choix jusqu'au fin des démarche d'achat de terrain</h1>
               <a className="service-link" href="#services">En savoir plus</a>
             </div>
           </div>
