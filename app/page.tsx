@@ -12,6 +12,8 @@ import hero1 from '@/public/assets/hero-img1.jpg';
 import hero2 from '@/public/assets/hero-png2A.png';
 import hero3 from '@/public/assets/hero-png2B.png';
 import service1 from '@/public/assets/service1.jpg';
+import service2 from '@/public/assets/service2.jpg';
+import service3 from '@/public/assets/service3.jpg';
 
 
 
@@ -37,31 +39,34 @@ export default function Home() {
       </section>
 
       <section id="services" className="services" >
-        <h1 className="title" data-aos-duration="700" data-aos="fade-up">Nos services</h1>
+        <div data-aos-duration="700" data-aos="fade-up">
+          <h1 className="title" >Nos services</h1>
+          <p>Décrouvrez les services que nous proposons</p>
+        </div>
         <div className="cartes-services">
 
-          <div className="carte">
+          <div data-aos-duration="1000" data-aos="fade-up" className="carte">
             <div className="left"><Image src={service1} className="service1" alt="del&co logo"/></div>
             <div className="right">
               <h2>Fournitures</h2>
-              <h1>Besoin de Fournitures pour votre batiment </h1>
-              <a href="#services">En savoir plus</a>
+              <h1>Nous trouvons les fournitures conforme à vos exigences. </h1>
+              <a className="service-link" href="#services">En savoir plus</a>
             </div>
           </div>
-          <div className="carte">
+          <div data-aos-duration="1000" data-aos="fade-up" className="carte">
             <div className="right">
-              <h2>Fournitures</h2>
-              <h1>Besoin de Fournitures pour votre batiment </h1>
-              <a href="#services">En savoir plus</a>
+              <h2>Construstuction</h2>
+              <h1>Nous prenons en charge l'intégralité de vos projets de construction.</h1>
+              <a className="service-link" href="#services">En savoir plus</a>
             </div>
-            <div className="left"><Image src={service1} className="service1" alt="del&co logo"/></div>
+            <div className="left"><Image src={service2} className="service1" alt="del&co logo"/></div>
           </div>
-          <div className="carte">
-            <div className="left"><Image src={service1} className="service1" alt="del&co logo"/></div>
+          <div data-aos-duration="1000" data-aos="fade-up" className="carte">
+            <div className="left"><Image src={service3} className="service1" alt="del&co logo"/></div>
             <div className="right">
-              <h2>Fournitures</h2>
+              <h2>Achat de terrain</h2>
               <h1>Besoin de Fournitures pour votre batiment </h1>
-              <a href="#services">En savoir plus</a>
+              <a className="service-link" href="#services">En savoir plus</a>
             </div>
           </div>
 
