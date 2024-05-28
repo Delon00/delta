@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 .color1{color:#ff7d43}
-body{position: relative;}
 .main-hero {
   position: relative;
   height: 100vh;
@@ -53,21 +52,21 @@ body{position: relative;}
 }
 .dot{
 
-  border-radius: 100%;
+
   background-color: #fff;
   border: 1px solid #ff7f43;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   color: #000;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 .dot.active{
-  border-radius: 100%;
+
   background-color: #ff7d43;
   border: 1px solid #000;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 .heroimg1{
   height: 100%;
@@ -126,14 +125,21 @@ body{position: relative;}
 }
 
 #services{
+  position: relative;
+  z-index: 12;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(255,255,255);
+  background: linear-gradient(86deg, rgba(255,255,255,1) 0%, rgba(255,250,247,1) 28%, rgba(255,246,241,1) 61%, rgb(255, 224, 208) 100%);
+  padding: 3rem 0rem;
+}
+.contenue{
   position: absolute;
   z-index: 12;
   width: 100%;
-  background: rgb(255,255,255);
-  background: linear-gradient(86deg, rgba(255,255,255,1) 0%, rgba(255,250,247,1) 28%, rgba(255,246,241,1) 61%, rgb(255, 224, 208) 100%);
-  padding: 4rem 0rem;
-
+  height: 100%;
 }
+
 #services .title{
   font-size: 50px;
   font-weight: bold;
@@ -142,58 +148,67 @@ body{position: relative;}
 }
 .cartes-services {
   height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0px;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+.carte{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  width: 250px;
+  margin: 2rem 0rem;
+}
+.carte-info{
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  height: 50%;
 }
-.carte{
-  display: flex;
-  padding: 2rem;
-  height: 400px;
-  margin: 2rem 0rem;
-}
-.carte.noir{
-  background-color: #000;
-  color: #fff;
-}
-.carte .left{
-  width: 100%;
-  margin: 0 1rem;
-}
-.carte .right{
-  display:flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-.carte .right h1{
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 2rem;
-}
-.carte .right h2{
-  padding: 0.1rem 1rem;
-  background-color: #ff7d43;
-  color:#fff;
+.carte-info h3{
   font-size: 20px;
   font-weight: 600;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  
 }
+.btn-carte{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  width: 70%;
+  padding: 0.5rem;
+
+
+}
+.carte.noir{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #FFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  width: 250px;
+  margin: 2rem 0rem;
+}
+.btn-carte.noir{
+  border: 1px solid #FFF;
+}
+
 .service1{
   width: 100%;
-  height: 100%;
+  height: 50%;
   object-fit: cover;
-  border: 1px solid #000;
+
 }
-.service2{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 1px solid #fff;
-}
+
 .service-link{
   text-decoration: underline;
   font-weight: 600;
@@ -201,10 +216,28 @@ body{position: relative;}
 .service-link:hover{color: #ff7d43;}
 #apropos{
   position: relative;
-  height: 100dvh;
+  height: 100vh;
+  width: 100%;
+
+
+}
+#apropos .contenue{
+  background-image: url('/assets/apropos1.jpg');
+  background-size: cover; /* Optionnel : pour ajuster la taille de l'image */
+  background-position: center;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000031;
+}
+.textes-apropos{
+  position: absolute;
   padding: 2rem;
 }
 .title-apropos{
+  left: 20px;
   color: #ff7d43;
   font-size: 80px;
   font-weight: bold;
@@ -212,12 +245,13 @@ body{position: relative;}
   margin-bottom: 1rem;
 }
 .text-apropos{
-  width: 75%; 
+
+  left: 20px;
+  width: 50%; 
   text-align: justify;
   padding: 1rem;
   z-index: 12;
-  bottom: 1px;
-  background-color: #ff7f433a;
+  background-color: #ff7f435d;
   color: #000;
   font-size: 18px;
   border: 1px solid #000;
@@ -225,16 +259,8 @@ body{position: relative;}
 
 
 }
-.apropos-img{
-  position: absolute;
-  z-index: -1;
-  height: 70%;
-  width: auto;
-  object-fit: cover;
-  border: 1px solid #000;
-  right: 5%;
-  bottom: 0;
-}
+
+
 
 /* --------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------MEDIAQUERRY--------------------------------------------- */
@@ -254,8 +280,6 @@ body{position: relative;}
 
 @media only screen and (max-width: 650px) {
   .main-hero h1{font-size: 90px; width: 100%; text-align: center;top: 7%; }
-  .carte .right h1{font-size: 24px;line-height: 1.8rem;}
-  .carte{padding: 0.5rem;}
   #services .title{font-size: 40px;}
   .title-apropos{font-size: 50px;}
 
@@ -268,7 +292,6 @@ body{position: relative;}
 
 @media only screen and (max-width: 500px) {
   .hero-colone2{height: 100dvh;}
-  .carte .right h1{font-size: 18px;line-height: 1.5rem;}
   #services{padding: 4rem 1rem ;}
 
 }
@@ -279,7 +302,6 @@ body{position: relative;}
 }
 @media only screen and (max-width: 390px) {
   .main-hero h1 {width: 100%;font-size: 56px; top: 10%; text-align: center;}
-  .carte .right h2{font-size: 16px;}
 }
 
 @media only screen and (max-width: 290px) {

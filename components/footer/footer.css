@@ -1,0 +1,8 @@
+.footer{
+    position: relative;
+    width: 100%;
+    background: rgb(255,245,240);
+background: linear-gradient(86deg, rgba(255,245,240,1) 0%, rgba(255,220,205,1) 100%);}
+.footer-card{
+    background-color: black;
+}
