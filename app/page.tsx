@@ -77,7 +77,7 @@ export default function Home() {
           </div>
           <div className="cartes-services">
             {services.map((service, index) => (
-              <div key={index} className={`carte ${index === 1 ? 'noir' : ''}`}>
+              <div data-aos-duration="700" data-aos="fade-up" key={index} className={`carte ${index === 1 ? 'noir' : ''}`}>
                 <Image src={service.image} className="service-img" alt={`${service.title} image`} />
                 <div className="carte-info">
                   <h3>{service.title}</h3>
@@ -94,7 +94,6 @@ export default function Home() {
       </section>
 
       <section id="apropos">
-        <div className="contenue">
         <div className="overlay"></div>
         <div className="textes-apropos">
           <h1 className="title-apropos">A propos de nous</h1>
@@ -106,8 +105,6 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, enim eveniet. Dolorum minima soluta nemo? Eos doloribus 
               nostrum repudiandae inventore soluta! Dolore repellat dignissimos voluptates qui nostrum voluptatum libero nisi.
             </p>
-        </div>
-
           <div>
         </div>
         </div>
