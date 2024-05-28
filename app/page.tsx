@@ -33,14 +33,13 @@ export default function Home() {
     },
     {
       image: service2,
-      title: 'Design',
-      description: 'Nos designs sont réalisés avec soin pour répondre à vos attentes et donner vie à vos idées.'
+      title: 'Construction',
+      description: 'Nous assurons la construction de vos projets avec la plus grande rigueur et professionnalisme.'
     },
     {
       image: service3,
-      title: 'Construction',
-      description: 'Nous assurons la construction de vos projets avec la plus grande rigueur et professionnalisme.'
-    }
+      title: 'Achat de terrain',
+      description: 'Nous offrons un service complet d\'achat de terrain, vous accompagnant à chaque étape du processus.'    }
   ];
 
   return (
@@ -102,8 +101,7 @@ export default function Home() {
               Suscipit vitae, veritatis impedit aliquid, nobis quam ducimus pariatur dignissimos explicabo nesciunt repellat hic. 
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam esse necessitatibus alias fuga molestiae distinctio 
               qui placeat sit voluptate ex error reprehenderit, debitis aperiam asperiores sed dolorum similique nam quae! 
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, enim eveniet. Dolorum minima soluta nemo? Eos doloribus 
-              nostrum repudiandae inventore soluta! Dolore repellat dignissimos voluptates qui nostrum voluptatum libero nisi.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
           <div>
         </div>

@@ -195,11 +195,23 @@
   border: 1px solid #000;
   width: 70%;
   padding: 0.5rem;
+  transition: transform 0.3s ease, border 0.3s ease;
 }
 .btn-carte.noir{
   border: 1px solid #FFF;
 }
-
+.btn-carte:hover{
+  background-color: #ff7f43;
+  border: 1px solid #000;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-carte.noir:hover{
+  background-color: #ff7f43;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
 
 
 .service-img{
