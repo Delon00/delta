@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       <section id="services" className="services">
-        <div className="contenue">
+
           <div className="px-8" data-aos-duration="700" data-aos="fade-up">
             <h1 className="title">Nos services</h1>
             <p>Découvrez les services que nous proposons</p>
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
+
       </section>
 
       <section id="apropos">
